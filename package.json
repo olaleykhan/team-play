@@ -1,0 +1,46 @@
+{
+  "name": "team-play",
+  "version": "1.0.0",
+  "description": "app for team interaction",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js ",
+    "dev": "nodemon src/server.js",
+    "db:migrate": "sequelize db:migrate",
+    "db:migrate:undo": "sequelize db:migrate:undo:all",
+    "db:reset": "npm run db:migrate:undo && npm run db:migrate",
+    "db:seed": "sequelize db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olaleykhan/team-play.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "team-play",
+    "js",
+    "javascript"
+  ],
+  "author": "Abdullah (LekanDev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olaleykhan/team-play/issues"
+  },
+  "homepage": "https://github.com/olaleykhan/team-play#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
